@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="login">
+    <head>
+        <script src="loginController.js"></script>
+        <link href="Main.css" rel="stylesheet"></a>
+        <script src="isLoggedIn.js"></script>
+        <meta charset="UTF-8"> <!-- Specify the character encoding -->
+
+        <title>Login Screen</title>
+
+    </head>
+    <body class="login">
+        
+        
+        
+        
+        <button id="toggleButton" class="topToggle whiteToggle" >▥</button>
+        
+        
+        
+        
+        
+        <div id= "popup" class="navContainer">
+            <table>
+                <tr>
+                    <td><a class= "navButton"  href="index.html">Start</td>
+
+                </tr>   
+                <tr>
+                    <td><a class= "navButton"  href="LoginScreen.html">Login</td>
+
+                </tr>
+                <tr>
+                    <td> <a class="navButton"  href="Arena.html">Question Arena</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="navButton"  href="Arcade.html">Math Arcade</a>
+
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+        <h1 class="loginTitle">Math Arcade</h1>
+        <h3 id="loginState" class="loginTitle">Sign In</h3>
+
+        <section  class="loginSection">
+            <div id="Login" class="loginSectionContainer">
+                <table  style="width: 100%;">
+                    <p class="loginContent">Your Email/Username</p>
+                    <tr >
+                        <input id="password" class="loginInputs" type="text" placeholder="Ex: ILoveSeattle@Gmail.com">
+                    </tr>
+                    <p class="loginContent">Your Password</p>
+                    <tr >
+                        <input id="username" class="loginInputs" type="text" placeholder="Ex: seattleRocks2011!">
+
+                    </tr>
+                
+                    <tr >
+                        <td class="loginButtonContainer">
+                            <button class="loginButton" onclick="signInAttempt()">Sign In</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <br>
+                        <br>
+                      
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="loginHelpButton" onclick="changetoSignUp()">No account?-Create an account</button>
+                            <button class="loginHelpButton">Forgot Passoword?</button>
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+                
+            </div>
+           <div id="signUp" class="loginSectionContainer hidden">
+                <table  style="width: 100%;">
+                    <p class="loginContent">New Email/Username</p>
+                    <tr >
+                        <input id="newUsername" class="loginInputs smallerInput" type="text" placeholder="Ex: ILoveSeattle@Gmail.com">
+                    </tr>
+                    <p class="loginContent">New Password</p>
+                    <tr >
+                        <input id="newPassword"  class="loginInputs smallerInput" type="text" placeholder="Ex: seattleRocks2011!">
+
+                    </tr>
+                    <p class="loginContent">Repeat your Passoword</p>
+                    <tr >
+                        <input id="newPasswordValidated" class="loginInputs smallerInput" type="text" placeholder="Ex: seattleRocks2011!">
+
+                    </tr>
+                
+                    <tr >
+                        <td class="loginButtonContainer">
+                            <button class="loginButton smallerButton" onclick="createNewUser()">Create Account</button>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            <button class="loginHelpButton smallerHelp" onclick="changetoSignUp()">Back to sign in</button>
+                            
+                        </td>
+                        
+                    </tr>
+                    
+                </table>
+                
+            </div>
+        </section>
+
+</body>
+    </body>
+</html>

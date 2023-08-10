@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="mainfuncs.js"></script>
+        <link href="Main.css" rel="stylesheet"></a>
+        <meta charset="UTF-8"> <!-- Specify the character encoding -->
+
+        <title>Arcade</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="title">Math Arcade!</h1>
+                    </td>
+                    <td>
+                        <button id="topLoginButton" class="topLogin" onclick="ChangeScreen(Screens.LOGIN)">Login</button>
+                        <p id="welcomelabel" class="topWelcomeLabel hidden" >Hello </p>
+                    </td>
+                    <td>
+                        <p id="pointsDisplayer" class="topWelcomeLabel hidden">points</p>
+
+                    </td>
+                    <td>
+                        <img id ="currentProfileIcon" class="profileIcon" src="Resources/ProfileIcons/magician.png" alt="barista" onclick="changeProfileIconTest()">
+
+                    </td>
+                </tr>
+            </table>
+    
+        </div>
+        <div id="info" class="infoContainer">
+            <table>
+                <tr>
+                    <td>
+                        <img id ="currentProfileIcon" class="profileIcon" src="Resources/ProfileIcons/magician.png" alt="barista" onclick="changeProfileIconTest()">
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td> 
+                        <button onclick="setPoints(1)">
+                            Points Increase
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setPoints(-1)">
+                            Point Decrease
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>
+                            Help
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button  onclick="logOut()">
+                            Log Out
+                        </button>
+                    </td>
+                </tr>
+            </table>
+    
+    
+    
+    
+    
+        </div>
+        
+        <button id="toggleButton" >▥</button>
+        <h1 style="text-align: center;">Arcade</h1>
+
+
+        <div id= "popup" class="navContainer">
+            <table>
+                <tr>
+                    <td><a class= "navButton"  href="index.html">Start</td>
+
+                </tr>   
+                <tr>
+                    <td><a class= "navButton"  href="LoginScreen.html">Login</td>
+
+                </tr>
+                <tr>
+                    <td> <a class="navButton"  href="Arena.html">Question Arena</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="navButton"  href="Arcade.html">Math Arcade</a>
+
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+
+
+        
+</body>
+    </body>
+</html>

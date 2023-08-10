@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="Main.css" rel="stylesheet">
+    <script src="mainfuncs.js"></script>
+    <meta charset="UTF-8"> <!-- Specify the character encoding -->
+
+    <title>Math Arcade</title>
+</head>
+
+<body>
+    <div class="header">
+       
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <h1 class="title">Math Arcade!</h1>
+                    </td>
+                    <td>
+                        <button id="topLoginButton" class="topLogin" onclick="ChangeScreen(Screens.LOGIN)">Login</button>
+                        <p id="welcomelabel" class="topWelcomeLabel hidden" >Hello </p>
+                    </td>
+                    <td>
+                        <p id="pointsDisplayer" class="topWelcomeLabel hidden">points</p>
+                    </td>
+                    <td>
+                        <img id ="currentProfileIcon" class="profileIcon" src="Resources/ProfileIcons/magician.png" alt="barista" onclick="changeProfileIconTest()">
+
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+
+    </div>
+    <div id="info" class="infoContainer">
+        <table>
+            <tr>
+                <td> 
+                    <button onclick="setPoints(1)">
+                        Points Increase
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="setPoints(-1)">
+                        Point Decrease
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button >
+                        Help
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="logOut()">
+                        Log Out
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+    </div>
+
+    <button id="toggleButton" class="whiteToggle">▥</button>
+
+
+
+    <div id="popup" class="navContainer">
+
+
+        <table>
+            <tr>
+                <td><a class="navButton" href="index.html">Start</a></td>
+            </tr>
+            <tr>
+                <td><a class="navButton" href="LoginScreen.html">Login</a></td>
+            </tr>
+            <tr>
+                <td> <a class="navButton"  href="Arena.html">Question Arena</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="navButton"  href="Arcade.html">Math Arcade</a>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <section class="aboutSection">
+        <table style="border-spacing: 20px;">
+            <tr>
+                <td colspan="3">
+                    <div class="aboutSectionContent">
+                        <h2>Welcome to the Math Arcade – Where Learning Adds Up to Fun!</h2>
+                        <p>Step into a world where mathematics meets excitement and education turns into entertainment.
+                            The Math Arcade is your virtual destination for mastering math while immersing yourself in
+                            an arcade-style adventure.
+                            Engage your mind with a diverse array of math challenges tailored to various skill levels
+                            and topics.
+                            Earn points for each correct answer and watch your knowledge grow as you progress through
+                            our interactive question bank.
+                            But the fun doesn't stop there – use your hard-earned points to unlock a vibrant arcade
+                            packed with thrilling games and challenges.
+                            Whether you're aiming to sharpen your mental math agility or simply seeking a unique way to
+                            enjoy numbers,
+                            the Math Arcade offers a dynamic platform that transforms learning into a thrilling game.
+                            Join us and embark on a journey where mathematical prowess is your ticket to an exhilarating
+                            arcade experience like no other.</p>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="aboutSectionMiniContent">
+                        <h1>Quick</h1>
+                        <p>Creating an account takes only a couple seconds</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="aboutSectionMiniContent">
+                        <h1>Fun</h1>
+                        <p>Answer questions for points and use those points to play games</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="aboutSectionMiniContent">
+                        <h1>Helpful</h1>
+                        <p>Using these questions you will learn lots of new math</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+    </section>
+
+</body>
+
+</html>
